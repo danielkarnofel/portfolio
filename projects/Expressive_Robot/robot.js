@@ -44,8 +44,9 @@ function preload(){
 // - - - - - - - - - - 
 
 function setup() {
-  var canvas = createCanvas(600, 400);
-  canvas.parent('sketch-div');
+  // var canvas = createCanvas(600, 400);
+  // canvas.parent('sketch-div');
+  createCanvas(600, 400)
 }
 
 // - - - - - - - - - - 
@@ -374,7 +375,7 @@ function scared(){
   push();
   strokeWeight(2);
   fill(100);
-  circle(rX, rY+rD/6, rD/5, rD/5);
+  ellipse(rX, rY+rD/6, rD/5, rD/5);
   pop();
 }
 
@@ -407,10 +408,6 @@ function neutral(){
   line(rX-5, rY+rD/10, rX+5, rY+rD/10);
   pop();
 }
-
-
-
-
 
 
 
