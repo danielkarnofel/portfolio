@@ -23,7 +23,7 @@ let font;
 // - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function preload() {
-  font = loadFont('DotGothic16-Regular.ttf');
+  font = loadFont('fonts/DotGothic16-Regular.ttf');
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - 
