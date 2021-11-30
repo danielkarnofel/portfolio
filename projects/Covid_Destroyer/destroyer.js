@@ -37,7 +37,7 @@ function preload(){
   
   // load images
   laser = loadImage('images/laser_cannon.png');
-  virus = loadImage('imagesvirus.png');
+  virus = loadImage('images/virus.png');
   
   // load fonts
   marker = loadFont('fonts/PermanentMarker-Regular.ttf');
