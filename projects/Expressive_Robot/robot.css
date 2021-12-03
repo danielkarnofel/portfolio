@@ -52,17 +52,14 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-.centered {
-	display: flex;
-	justify-content: center;
-}
-
 #description {
 	width: 600px;
 	margin: auto;
 }
 
 #sketch-div {
+	width: 600px;
+	margin: auto;
 	padding: 1rem;
 }
 
