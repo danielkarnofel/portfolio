@@ -4,7 +4,7 @@
 
 let n = 30;
 let x, y;
-let scl = 300;
+let scl = 100;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
@@ -48,7 +48,7 @@ function draw() {
       y = r * sin(s) * sin(t);
       z = r * cos(s);
 
-      stroke(map(z, 0, width, 255, 0));
+      stroke(map(z, -scl, scl, 255, 0));
       
       point(x, y, z);
       
