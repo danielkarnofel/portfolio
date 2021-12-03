@@ -28,7 +28,7 @@ function draw() {
   translate(0, 0, 50);
   rotateX(millis()/2000);
 
-  strokeWeight(3);
+  strokeWeight(2);
   stroke(255);
 
   for (let i = 0; i < n; i++) {
