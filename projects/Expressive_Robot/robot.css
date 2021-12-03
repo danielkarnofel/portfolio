@@ -28,6 +28,7 @@ p{
 	display: block;
 	text-align: left;
 	width: 400px;
+	margin: auto;
 	font-size: 10px;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
@@ -50,11 +51,6 @@ a:hover, a:active {
 	font-family: 'Work Sans', sans-serif;
     color: red;
     text-decoration: underline;
-}
-
-#description {
-	width: 600px;
-	margin: auto;
 }
 
 #sketch-div {
