@@ -12,7 +12,6 @@ function setup() {
 
   let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
   canvas.parent('sketch-div');
-  noCursor();
 
 }
 
@@ -27,7 +26,8 @@ function draw() {
   background(10, 10, 10);
 
   translate(0, 0, 50);
-  rotateX(millis()/2000);
+  rotateY(millis()/2000);
+  rotateZ(millis()/1000);
 
   strokeWeight(3);
   stroke(255);
