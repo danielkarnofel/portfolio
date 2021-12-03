@@ -22,11 +22,13 @@ p{
 }
 
 iframe {
-    width: 1020;
+    width: 100%;
     margin: auto;
+    padding: 1rem;
 }
 
 #description {
+    text-align: center;
     width: 800px;
     margin: auto;
     padding: 1rem;
