@@ -2,9 +2,9 @@
 // Daniel Karnofel
 // - - - - - - - - - - - - - - - - - - - - 
 
-let n = 30;
+let n = 20;
 let x, y;
-let scl = 100;
+let scl = 300;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
@@ -47,8 +47,6 @@ function draw() {
       x = r * sin(s) * cos(t);
       y = r * sin(s) * sin(t);
       z = r * cos(s);
-
-      stroke(map(z, -scl, scl, 255, 0));
       
       point(x, y, z);
       
