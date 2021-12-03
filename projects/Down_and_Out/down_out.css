@@ -23,8 +23,7 @@ p{
 
 iframe {
     width: 1020;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 #description {
