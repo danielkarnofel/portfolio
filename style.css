@@ -119,7 +119,7 @@ header {
 /* Intro */
 
 #intro {
-    background-color: var(--accent-clr);
+    background-color: var(--dark-clr);
     color: var(--light-clr);
     display: flex;
     justify-content: center;
@@ -132,7 +132,6 @@ header {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: 90%;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
