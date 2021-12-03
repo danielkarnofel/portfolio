@@ -24,7 +24,7 @@ function windowResized() {
 
 function draw() {
 
-  background(0);
+  background(10, 10, 10);
 
   translate(0, 0, 50);
   rotateX(millis()/2000);
