@@ -53,6 +53,11 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
+#description {
+	width: 400px;
+	margin: auto;
+}
+
 #sketch-div {
 	width: 600px;
 	margin: auto;
