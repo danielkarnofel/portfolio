@@ -30,6 +30,7 @@ function draw() {
   rotateX(millis()/2000);
 
   strokeWeight(3);
+  stroke(255);
 
   for (let i = 0; i < n; i++) {
     
