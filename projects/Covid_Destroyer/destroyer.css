@@ -27,7 +27,6 @@ h2{
 p{
 	display: block;
 	text-align: left;
-	width: 400px;
 	font-size: 10px;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
@@ -52,10 +51,15 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-#sketch-div {
-	display: block;
-	justify-content: center;
-	padding: 1rem;
+#description {
+	width: 600px;
+	margin: auto;
+	
 }
 
+#sketch-div {
+	width: 600px;
+	margin: auto;
+	padding: 1rem;
+}
 
