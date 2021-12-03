@@ -4,7 +4,7 @@
 
 let n = 30;
 let x, y;
-let scl = 3;
+let scl = 300;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
@@ -28,10 +28,8 @@ function draw() {
 
   translate(0, 0, 50);
   rotateX(millis()/2000);
-  
-  let scl = 100;
+
   strokeWeight(3);
-  stroke(255);
 
   for (let i = 0; i < n; i++) {
     
@@ -46,9 +44,11 @@ function draw() {
       
       r = scl * cos(a*t)*sin(b*s);
       
-      x = scl * r * sin(s) * cos(t);
-      y = scl * r * sin(s) * sin(t);
-      z = scl * r * cos(s);
+      x = r * sin(s) * cos(t);
+      y = r * sin(s) * sin(t);
+      z = r * cos(s);
+
+      stroke(map(z, 0, width, 255, 0));
       
       point(x, y, z);
       
