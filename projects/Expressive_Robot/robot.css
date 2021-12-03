@@ -52,12 +52,13 @@ a:hover, a:active {
 }
 
 #description {
-	width: 700px;
+	width: 600px;
 	margin: auto;
 	
 }
 
 #sketch-div {
+	width: 600px;
 	margin: auto;
 	padding: 1rem;
 }

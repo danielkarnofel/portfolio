@@ -44,8 +44,7 @@ function preload(){
 // - - - - - - - - - - 
 
 function setup() {
-  let window = windowWidth-200;
-  var canvas = createCanvas(window, floor(window*.75));
+  var canvas = createCanvas(600, 400);
   canvas.parent('sketch-div');
 }
 
