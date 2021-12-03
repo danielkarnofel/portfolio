@@ -34,8 +34,6 @@ p{
 
 a:link, a:visited {
 
-    margin-left: 50px;
-	margin-right: 50px;
 	font-size: 15px;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
@@ -43,8 +41,6 @@ a:link, a:visited {
 
 a:hover, a:active {
 
-	margin-left: 50px;
-	margin-right: 50px;
 	font-size: 15px;
 	font-family: 'Work Sans', sans-serif;
     color: red;
