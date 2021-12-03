@@ -57,6 +57,11 @@ a:hover, a:active {
 	justify-content: center;
 }
 
+#description {
+	width: 600px;
+	margin: auto;
+}
+
 #sketch-div {
 	padding: 1rem;
 }
