@@ -128,7 +128,7 @@ header {
     max-height: 800px;
 }
 
-#intro img {
+#intro #sketch-div {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
