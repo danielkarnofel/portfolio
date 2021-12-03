@@ -5,6 +5,7 @@ body{
 }
 
 h1{
+	text-align: center;
 	margin-left: 50px;
 	font-size: 30px;
 	font-family: 'Work Sans', sans-serif;
@@ -13,9 +14,14 @@ h1{
 
 h2{
 	margin-left: 50px;
-	font-size: 35px;
+	font-size: 15px;
 	font-family: 'Work Sans', sans-serif;
-	color: red;
+	color: white;
+}
+
+#subtitle {
+	text-align: center;
+	font-size: 35px;
 }
 
 p{
@@ -46,9 +52,9 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-main {
-	margin-left: auto;
-	margin-right: auto;
+#sketch-div {
+	display: block;
+	justify-content: center;
+	padding: 1rem;
 }
-
 
