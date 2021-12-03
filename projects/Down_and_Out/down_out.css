@@ -15,21 +15,20 @@ h1{
 
 p{
 	display: block;
-	text-align: left;
+	text-align: center;
 	font-size: 10px;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
 }
 
 iframe {
-    width: 100%;
-    margin: auto;
+    display: block;
+    margin: 0 auto;
     padding: 1rem;
 }
 
 #description {
-    text-align: center;
-    width: 800px;
+    width: 100%;
     margin: auto;
     padding: 1rem;
 }
