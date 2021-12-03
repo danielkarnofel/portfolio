@@ -27,7 +27,6 @@ function draw() {
 
   translate(0, 0, 50);
   rotateX(millis()/2000);
-  rotateZ(millis()/1000);
 
   strokeWeight(3);
   stroke(255);
