@@ -6,6 +6,13 @@ body {
 }
 
 iframe {
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#description {
+    width: 800px;
+    margin: auto;
+    padding: 1rem;
 }
