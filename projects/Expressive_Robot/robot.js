@@ -46,6 +46,8 @@ function preload(){
 function setup() {
   var canvas = createCanvas(600, 400);
   canvas.parent('sketch-div');
+
+  cursor(HAND);
 }
 
 // - - - - - - - - - - 
