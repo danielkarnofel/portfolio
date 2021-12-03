@@ -2,7 +2,7 @@
 // Daniel Karnofel
 // - - - - - - - - - - - - - - - - - - - - 
 
-let n = 20;
+let n = 40;
 let x, y;
 let scl = 300;
 
@@ -26,7 +26,7 @@ function draw() {
   background(10, 10, 10);
 
   translate(0, 0, 50);
-  rotateY(millis()/2000);
+  rotateX(millis()/2000);
   rotateZ(millis()/1000);
 
   strokeWeight(3);
