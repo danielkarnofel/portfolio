@@ -44,7 +44,8 @@ function preload(){
 // - - - - - - - - - - 
 
 function setup() {
-  var canvas = createCanvas(600, 400);
+  let window = windowWidth-200;
+  var canvas = createCanvas(window, floor(window*.75));
   canvas.parent('sketch-div');
 }
 
@@ -53,9 +54,6 @@ function setup() {
 function draw() {
   
   background(128,144,194);
-  
-  
-  
   
   // draw ground w 1D noise
   push();
@@ -69,8 +67,6 @@ function draw() {
   }
   speed+=sInc; // movement speed
   pop();
-  
-  
   
   
   // - - - - - - - - - - 
@@ -101,9 +97,6 @@ function draw() {
   fill(150);
   circle(rX, rY, rD);
   pop();  
-  
-  
-  
   
   
   
@@ -225,8 +218,7 @@ function draw() {
     pop();
   }
   
-  
-  
+
   
   // - - - - - - - - - - 
   // interactivity
@@ -322,10 +314,6 @@ function mouseClicked(){
   }
   
 }
-
-
-
-
 
 
 

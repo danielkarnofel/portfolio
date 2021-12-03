@@ -27,8 +27,6 @@ h2{
 p{
 	display: block;
 	text-align: left;
-	width: 400px;
-	margin: auto;
 	font-size: 10px;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
@@ -54,12 +52,12 @@ a:hover, a:active {
 }
 
 #description {
-	width: 400px;
+	width: 700px;
 	margin: auto;
+	
 }
 
 #sketch-div {
-	width: 600px;
 	margin: auto;
 	padding: 1rem;
 }
