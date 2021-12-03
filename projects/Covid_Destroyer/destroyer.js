@@ -40,8 +40,8 @@ function preload(){
   virus = loadImage('images/virus.png');
   
   // load fonts
-  marker = loadFont('/fonts/PermanentMarker-Regular.ttf');
-  roboto = loadFont('/fonts/Roboto-Regular.ttf');
+  marker = loadFont('../../fonts/PermanentMarker-Regular.ttf');
+  roboto = loadFont('../../fonts/Roboto-Regular.ttf');
 
 }
 
