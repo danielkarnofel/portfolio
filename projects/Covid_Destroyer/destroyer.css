@@ -34,14 +34,14 @@ p{
 
 a:link, a:visited {
 
-	font-size: 15px;
+	font-size: 10px;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
 }
 
 a:hover, a:active {
 
-	font-size: 15px;
+	font-size: 10px;
 	font-family: 'Work Sans', sans-serif;
     color: red;
     text-decoration: underline;
