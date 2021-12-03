@@ -85,11 +85,13 @@ class Note {
     this.carrier = new p5.Oscillator('sine');
     this.carrier.amp(0);
     this.carrier.freq(baseFreq);
+    this.carrier.start();
 
     this.modulator = new p5.Oscillator('sawtooth');
     
     this.modulator.disconnect();
     this.carrier.freq(this.modulator);
+    this.modulator.start();
 
     this.modFreq = this.modFreq;
     this.modDepth = this.modDepth;
