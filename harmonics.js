@@ -4,6 +4,7 @@
 
 let n = 30;
 let x, y;
+let scl = 3;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
@@ -43,7 +44,7 @@ function draw() {
 
       let t = map(j, 0, n, 0, TWO_PI);
       
-      r = cos(a*t)*sin(b*s);
+      r = scl * cos(a*t)*sin(b*s);
       
       x = scl * r * sin(s) * cos(t);
       y = scl * r * sin(s) * sin(t);
