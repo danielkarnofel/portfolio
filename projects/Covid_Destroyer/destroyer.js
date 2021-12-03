@@ -40,14 +40,17 @@ function preload(){
   virus = loadImage('images/virus.png');
   
   // load fonts
-  marker = loadFont('fonts/PermanentMarker-Regular.ttf');
-  roboto = loadFont('fonts/Roboto-Regular.ttf');
+  marker = loadFont('/fonts/PermanentMarker-Regular.ttf');
+  roboto = loadFont('/fonts/Roboto-Regular.ttf');
 
 }
 
 // - - - - - - - - - - - - - - - - - - - - 
 
 function setup() {
+  // let wWidth = windowHeight * .75;
+  // var canvas = createCanvas(wWidth, windowHeight);
+
   var canvas = createCanvas(450, 600);
   canvas.parent('sketch-div');
   
