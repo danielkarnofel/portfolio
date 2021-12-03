@@ -5,8 +5,24 @@ body {
     color: white;
 }
 
+h1{
+	text-align: center;
+	margin-left: 50px;
+	font-size: 30px;
+	font-family: 'Work Sans', sans-serif;
+	color: white;
+}
+
+p{
+	display: block;
+	text-align: left;
+	font-size: 10px;
+	font-family: 'Work Sans', sans-serif;
+	color: white;
+}
+
 iframe {
-    width: 70%;
+    width: 1020;
     margin-left: auto;
     margin-right: auto;
 }
