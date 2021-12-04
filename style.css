@@ -207,6 +207,7 @@ main h2 {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+    height: 100%;
 }
 
 .project-item:focus {
