@@ -180,6 +180,7 @@ main {
     background-color: var(--dark-clr);
     color: var(--light-color);
     padding: 3rem 0 0;
+    text-align: center;
 }
 
 main h2 {
@@ -194,18 +195,29 @@ main h2 {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project-item {
-    text-align: center;
-    height: 25vw;
-    line-height: 25vw;
+    background: var(--clr-accent);
+    overflow: hidden;
 }
 
-a.project-item:hover {
-    background-color: var(--mid-clr);
+.project__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.project-item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.project-img:hover,
+.project-item:focus .portfolio-img {
+    transform: scale(1.2);
+    opacity: .5;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
