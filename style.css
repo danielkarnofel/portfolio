@@ -171,7 +171,8 @@ header {
     max-width: 600px;
     text-align: justify;
     margin: 0;
-    width: minmax(30em, 50em)
+    width: minmax(30em, 50em);
+    line-height: 125%;
 }
 
 /*----------------------------------------------------------------------------------------------------*/

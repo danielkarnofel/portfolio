@@ -2,7 +2,7 @@
 // Daniel Karnofel
 // - - - - - - - - - - - - - - - - - - - - 
 
-let n = 30;
+let n = 20;
 let x, y;
 let scl = 300;
 
