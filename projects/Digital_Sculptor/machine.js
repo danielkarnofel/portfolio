@@ -20,7 +20,7 @@ function preload() {
   
   classifier = ml5.imageClassifier(imageModelURL + 'model.json');
   
-  font = loadFont('Roboto-Regular.ttf');
+  font = loadFont('../../fonts/Roboto-Regular.ttf');
   
   loaded = true;
 }
