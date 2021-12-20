@@ -21,10 +21,8 @@ h = 0;
 
 function setup() {
     
-    let canvas = createCanvas(600, 400, WEBGL);
+    let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
     canvas.parent("sketch-div");
-
-//   createCanvas(600, 400, WEBGL);
   
   setupMachine();
 
