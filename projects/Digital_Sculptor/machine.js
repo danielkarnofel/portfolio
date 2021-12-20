@@ -57,7 +57,7 @@ function camDisplay() {
   textSize(18);
   textFont(font);
   textAlign(CENTER, CENTER);
-  text(label, varW + vidW/2, varH + vidH - 10);
+  text(label, varW + vidW/2, varH - offset);
 }
 
 // Get a prediction for the current video frame
