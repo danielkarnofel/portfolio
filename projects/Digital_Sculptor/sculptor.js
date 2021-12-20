@@ -76,7 +76,7 @@ function setup() {
 
 function draw() {
 
-  background(0, 0, 50);
+  background(50);
   
   camDisplay();
   
