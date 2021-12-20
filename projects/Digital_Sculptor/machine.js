@@ -6,7 +6,7 @@ let imageModelURL = 'https://teachablemachine.withgoogle.com/models/u75EP8qsd/';
 // Video
 let video;
 let flippedVideo;
-let vidW, vidH;
+let vidW = 400, vidH = 300;
 let varW, varH;
 
 let font;
@@ -29,9 +29,6 @@ function setupMachine() {
 
   // Create the video
   video = createCapture(VIDEO);
-
-  vidW = windowW * (1/7);
-  vidH = vidW*.75;
 
   video.size(vidW, vidH);
   video.hide();
