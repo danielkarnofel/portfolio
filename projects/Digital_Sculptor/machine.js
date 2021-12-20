@@ -47,7 +47,7 @@ function camDisplay() {
   varH = height/2-vidH - offset;
 
   // Draw the video
-  image(flippedVideo, varW, varH);
+  image(flippedVideo, 400, varH);
   push();
   stroke(0, 200, 0); 
   noFill();
