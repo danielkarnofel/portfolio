@@ -8,20 +8,43 @@ let levels = 50;
 let x, y;
 let xShift = 100;
 let z = [];
-let r = 100;
+let r = 100; // initial radius scale value
 let a = [];
 let b = [];
 let change = 0.01;
 
-let speed = levels / 500,
-  d = -1;
-h = 0;
+let speed = levels / 500;
+
+let d = -1;
+let h = 0;
+
+let margin = 200;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
+function preload(){
+  font = loadFont('../../fonts/Roboto-Regular.ttf');
+  preloadModel();
+}
+
+// - - - - - - - - - - - - - - - - - - - - 
+
+function windowResized() {
+
+  if(windowHeight+200 > windowWidth) {
+    r = windowWidth / 8;
+    resizeCanvas(windowWidth-margin, windowWidth * (3/4));
+  } else {
+    r = windowHeight / 8;
+    resizeCanvas(windowHeight-margin, windowHeight * (3/4));
+  }
+
+}
+
 function setup() {
 
-  createCanvas(600, 400, WEBGL);
+  let canvas = createCanvas(600, 400, WEBGL);
+  canvas.parent("sketch-div");
   
   setupMachine();
 
@@ -46,7 +69,7 @@ function setup() {
 
 function draw() {
 
-  background(220);
+  background(50);
   
   camDisplay();
   

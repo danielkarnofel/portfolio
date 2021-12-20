@@ -16,12 +16,9 @@ let loaded = false;
 let label = "";
 
 // Load the model first
-function preload() {
+function preloadModel() {
   
   classifier = ml5.imageClassifier(imageModelURL + 'model.json');
-  
-  font = loadFont('Roboto-Regular.ttf');
-  
   loaded = true;
 }
 
