@@ -3,10 +3,10 @@ body{
 }
 
 #sketch-div {
-	aspect-ratio: 4/3;
-	overflow: hidden;
-	padding: 20px;
-	margin: 100px;
+	/* aspect-ratio: 4/3;
+	overflow: hidden; */
+	/* padding: 20px;
+	margin: 100px; */
 	display: block;
 	border: 4px dotted rgb(0, 200, 0);
 }

@@ -49,7 +49,7 @@ function windowResized() {
 
 function setup() {
 
-  let canvas = createCanvas(600, 400, WEBGL);
+  let canvas = createCanvas(windowHeight-margin, (windowHeight-margin) * (3/4), WEBGL);
   canvas.parent("sketch-div");
   canvasSize();
   
@@ -76,7 +76,7 @@ function setup() {
 
 function draw() {
 
-  background(50, 50, 150);
+  background(50);
   
   camDisplay();
   

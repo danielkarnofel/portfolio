@@ -7,7 +7,7 @@ let imageModelURL = 'https://teachablemachine.withgoogle.com/models/u75EP8qsd/';
 let video;
 let flippedVideo;
 let vidW = 140;
-let vidH = 80;
+let vidH = vidW*(3/4);
 
 let font;
 let loaded = false;
@@ -45,7 +45,7 @@ function camDisplay() {
 
   // Border
   push();
-  stroke(100, 0, 0);
+  stroke(255, 0, 0);
   noFill();
   rect(vidX, vidY, vidW, vidH);
   pop();
