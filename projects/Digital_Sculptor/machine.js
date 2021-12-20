@@ -39,7 +39,7 @@ function setupMachine() {
 
 function camDisplay() {
 
-  let offset = 30;
+  let offset = 50;
 
   let varW = width/2-vidW - offset;
   let varH = height/2-vidH - offset;
