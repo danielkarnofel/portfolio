@@ -25,7 +25,11 @@ function windowResized() {
   windowW = windowWidth-100;
   windowH = windowHeight-100;
 
-  r = windowWidth/3;
+  if(windowW < windowH) {
+    r = windowW/3;
+  } else {
+    r = windowH/3;
+  }
 
   resizeCanvas(windowW, windowH, WEBGL);
 
@@ -36,7 +40,11 @@ function setup() {
   windowW = windowWidth-100;
   windowH = windowHeight-100;
 
-  r = windowWidth/3;
+  if(windowW < windowH) {
+    r = windowW/3;
+  } else {
+    r = windowH/3;
+  }
     
     let canvas = createCanvas(windowW, windowH, WEBGL);
     canvas.parent("sketch-div");
