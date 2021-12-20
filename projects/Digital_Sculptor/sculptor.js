@@ -26,14 +26,9 @@ let margin = 200;
 
 function windowResized() {
 
-  windowW = windowWidth-margin;
   windowH = windowHeight-margin;
-
-  if(windowW < windowH) {
-    r = windowW/rDiv;
-  } else {
-    r = windowH/rDiv;
-  }
+  windowW = windowW * (4/3);
+  r = windowW/rDiv;
 
   resizeCanvas(windowW, windowH, WEBGL);
 
@@ -41,14 +36,9 @@ function windowResized() {
 
 function setup() {
 
-  windowW = windowWidth-margin;
   windowH = windowHeight-margin;
-
-  if(windowW < windowH) {
-    r = windowW/rDiv;
-  } else {
-    r = windowH/rDiv;
-  }
+  windowW = windowW * (4/3);
+  r = windowW/rDiv;
     
     let canvas = createCanvas(windowW, windowH, WEBGL);
     canvas.parent("sketch-div");
