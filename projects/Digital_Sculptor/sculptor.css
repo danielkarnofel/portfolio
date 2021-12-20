@@ -5,16 +5,14 @@ body{
 
 #sketch-container {
 	position: relative;
-	padding-top: 75%;
-	width: calc(100vw - 200px);
-	margin: auto;
+	margin: 3rem auto;
 }
 
 #sketch-div {
 	position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
 	display: block;
 	border: 4px solid rgb(0, 200, 0);
 }
