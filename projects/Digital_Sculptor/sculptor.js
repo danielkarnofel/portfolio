@@ -10,7 +10,7 @@ let xShift = 100;
 let z = [];
 
 let r = 100;
-let rDiv = 4;
+let rDiv = 5;
 
 let a = [];
 let b = [];
@@ -66,7 +66,7 @@ function setup() {
 
 function draw() {
 
-  // background(50, 50, 50);
+  background(50, 50, 50);
   
   camDisplay();
   
