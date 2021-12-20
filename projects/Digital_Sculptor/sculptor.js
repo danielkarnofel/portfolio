@@ -26,9 +26,17 @@ let margin = 200;
 
 function windowResized() {
 
-  windowW = windowWidth-200;
-  windowH = windowW * (3/4);
+  if(windowWidth > windowHeight) {
+    windowW = windowWidth-200;
+    windowH = windowW * (3/4);
+  } else {
+    windowH = windowHeight;
+    windowW = windowH * (4/3);
+  }
   r = windowW/rDiv;
+
+  vidW = windowW * (1/7);
+  vidH = vidW*.75;
 
   resizeCanvas(windowW, windowH, WEBGL);
 
@@ -36,15 +44,20 @@ function windowResized() {
 
 function setup() {
 
-  windowW = windowWidth-200;
-  windowH = windowW * (3/4);
+  if(windowWidth > windowHeight) {
+    windowW = windowWidth-200;
+    windowH = windowW * (3/4);
+  } else {
+    windowH = windowHeight;
+    windowW = windowH * (4/3);
+  }
   r = windowW/rDiv;
 
   vidW = windowW * (1/7);
   vidH = vidW*.75;
     
-    let canvas = createCanvas(windowW, windowH, WEBGL);
-    canvas.parent("sketch-div");
+  let canvas = createCanvas(windowW, windowH, WEBGL);
+  canvas.parent("sketch-div");
   
   setupMachine();
 
