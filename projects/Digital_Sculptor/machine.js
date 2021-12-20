@@ -39,8 +39,8 @@ function setupMachine() {
 
 function camDisplay() {
 
-  let varW = width/2-vidW;
-  let varH = height/2-vidH;
+  let varW = width/2-vidW - 10;
+  let varH = height/2-vidH - 10;
 
   // Draw the video
   image(flippedVideo, varW, varH);
