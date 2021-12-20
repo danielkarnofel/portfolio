@@ -40,6 +40,13 @@ function camDisplay() {
   // Draw the video
   image(flippedVideo, width/2-vidW, height/2-vidH);
 
+  // Border
+  push();
+  stroke(100, 0, 0);
+  noFill();
+  rect(width/2-vidW, height/2-vidH, vidW, vidH);
+  pop();
+
   // Draw the label
   fill(0);
   textSize(18);
