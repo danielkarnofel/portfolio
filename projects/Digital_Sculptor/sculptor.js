@@ -26,8 +26,8 @@ let margin = 200;
 
 function windowResized() {
 
-  windowH = windowHeight-margin;
-  windowW = windowW * (4/3);
+  windowH = windowHeight-200;
+  windowW = windowH * (4/3);
   r = windowW/rDiv;
 
   resizeCanvas(windowW, windowH, WEBGL);
@@ -36,8 +36,8 @@ function windowResized() {
 
 function setup() {
 
-  windowH = windowHeight-margin;
-  windowW = windowW * (4/3);
+  windowH = windowHeight-200;
+  windowW = windowH * (4/3);
   r = windowW/rDiv;
     
     let canvas = createCanvas(windowW, windowH, WEBGL);
