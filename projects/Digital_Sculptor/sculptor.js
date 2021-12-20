@@ -24,9 +24,9 @@ let margin = 200;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
-function windowResized() {
-
-  if(windowWidth > windowHeight) {
+function canvasSize(){
+  
+  if(windowHeight > windowWidth) {
     windowW = windowWidth-200;
     windowH = windowW * (3/4);
   } else {
@@ -37,6 +37,11 @@ function windowResized() {
 
   vidW = windowW * (1/7);
   vidH = vidW*.75;
+}
+
+function windowResized() {
+
+  canvasSize();
 
   resizeCanvas(windowW, windowH, WEBGL);
 
@@ -44,14 +49,7 @@ function windowResized() {
 
 function setup() {
 
-  if(windowWidth > windowHeight) {
-    windowW = windowWidth-200;
-    windowH = windowW * (3/4);
-  } else {
-    windowH = windowHeight;
-    windowW = windowH * (4/3);
-  }
-  r = windowW/rDiv;
+  canvasSize();
 
   vidW = windowW * (1/7);
   vidH = vidW*.75;
