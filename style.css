@@ -196,7 +196,7 @@ main h2 {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33%, 100%));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project-item {
