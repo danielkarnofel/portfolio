@@ -14,14 +14,22 @@ let b = [];
 let change = 0.01;
 
 let speed = levels / 500,
-  d = -1;
+d = -1;
 h = 0;
+
+let w, h;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
+function windowResized() {
+
+  resizeCanvas(windowWidth, windowHeight);
+
+}
+
 function setup() {
     
-    let canvas = createCanvas(800, 600, WEBGL);
+    let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
     canvas.parent("sketch-div");
   
   setupMachine();
