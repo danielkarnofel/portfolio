@@ -6,8 +6,8 @@ let imageModelURL = 'https://teachablemachine.withgoogle.com/models/u75EP8qsd/';
 // Video
 let video;
 let flippedVideo;
-let vidW = 140;
-let vidH = 80;
+let vidW = 300;
+let vidH = vidW*.75;
 
 let font;
 let loaded = false;
@@ -42,13 +42,17 @@ function camDisplay() {
 
   // Draw the video
   image(flippedVideo, width/2-vidW, height/2-vidH);
+  push();
+  stroke(0, 200, 0); 
+  rect(width/2-vidW, height/2-vidH, vidW, vidH);
+  pop();
 
   // Draw the label
-  fill(0);
+  fill(255);
   textSize(18);
   textFont(font);
   textAlign(CENTER, CENTER);
-  text(label, width / 2 - vidW/2, height/2 - vidH - 20);
+  text(label, width / 2 - vidW/2 - 20, height/2 - vidH - 40);
 }
 
 // Get a prediction for the current video frame

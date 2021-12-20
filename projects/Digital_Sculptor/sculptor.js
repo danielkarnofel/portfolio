@@ -71,7 +71,7 @@ function draw() {
   camDisplay();
   
   rotateX(TWO_PI / 6);
-  rotateZ(millis() / 5000);
+  rotateZ(map(mouseX, 0, width, 0, TWO_PI));
 
   // - - - - - - - - - - - - - - - - - - - 
 
