@@ -30,7 +30,7 @@ function setupMachine() {
   // Create the video
   video = createCapture(VIDEO);
 
-  video.size(vidW, vidH);
+  video.size(400, vidH);
   video.hide();
 
   flippedVideo = ml5.flipImage(video);
