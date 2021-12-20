@@ -30,7 +30,7 @@ function setupMachine() {
   // Create the video
   video = createCapture(VIDEO);
 
-  video.size(400, vidH);
+  video.size(vidW, vidH);
   video.hide();
 
   flippedVideo = ml5.flipImage(video);
@@ -47,7 +47,7 @@ function camDisplay() {
   varH = height/2-vidH - offset;
 
   // Draw the video
-  image(flippedVideo, 400, varH);
+  image(flippedVideo, varW, varH);
   push();
   stroke(0, 200, 0); 
   noFill();

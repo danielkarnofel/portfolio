@@ -16,7 +16,7 @@ let a = [];
 let b = [];
 let change = 0.01;
 
-let speed = levels / 500
+let speed = levels / 500;
 let d = -1, h = 0;
 
 let windowH, windowW;
@@ -26,13 +26,13 @@ let margin = 200;
 
 function canvasSize(){
   
-  windowW = windowWidth-200;
-  windowH = windowW * (3/4);
+  windowW = windowWidth-margin;
+  windowH = windowHeight-margin;
 
   r = windowW/rDiv;
 
   vidW = windowW * (1/7);
-  vidH = vidW*.75;
+  vidH = vidW * (3/4);
 }
 
 function windowResized() {
