@@ -31,7 +31,7 @@ function preload(){
 
 function canvasSize() {
 
-  if(windowHeight > windowWidth*(3/4)) {
+  if(windowHeight > windowWidth) {
     r = windowWidth / 8;
     resizeCanvas(windowWidth-margin, (windowWidth-margin) * (3/4));
   } else {
