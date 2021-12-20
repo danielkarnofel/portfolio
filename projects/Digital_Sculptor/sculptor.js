@@ -8,47 +8,22 @@ let levels = 50;
 let x, y;
 let xShift = 100;
 let z = [];
-
 let r = 100;
-let rDiv = 5;
-
 let a = [];
 let b = [];
 let change = 0.01;
 
-let speed = levels / 500;
-let d = -1, h = 0;
-
-let windowH, windowW;
-let margin = 200;
+let speed = levels / 500,
+  d = -1;
+h = 0;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
-function canvasSize(){
-  
-  windowW = windowWidth-margin;
-  windowH = windowHeight-margin;
-
-  r = windowW/rDiv;
-
-  vidW = windowW * (1/7);
-  vidH = vidW * (3/4);
-}
-
-function windowResized() {
-
-  canvasSize();
-
-  resizeCanvas(windowW, windowH, WEBGL);
-
-}
-
 function setup() {
 
-  canvasSize();
-    
-  let canvas = createCanvas(windowW, windowH, WEBGL);
-  canvas.parent("sketch-div");
+  createCanvas(600, 400, WEBGL);
+  
+  setupMachine();
 
   for (let i = 0; i <= levels; i++) {
 
@@ -71,12 +46,12 @@ function setup() {
 
 function draw() {
 
-  background(50, 50, 50);
+  background(220);
   
   camDisplay();
   
   rotateX(TWO_PI / 6);
-  rotateZ(map(mouseX, 0, width, 0, TWO_PI));
+  rotateZ(millis() / 5000);
 
   // - - - - - - - - - - - - - - - - - - - 
 

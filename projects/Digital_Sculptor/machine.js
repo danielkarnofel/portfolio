@@ -6,8 +6,8 @@ let imageModelURL = 'https://teachablemachine.withgoogle.com/models/u75EP8qsd/';
 // Video
 let video;
 let flippedVideo;
-let vidW = 140, vidH = 80;
-let varW, varH;
+let vidW = 140;
+let vidH = 80;
 
 let font;
 let loaded = false;
@@ -20,7 +20,7 @@ function preload() {
   
   classifier = ml5.imageClassifier(imageModelURL + 'model.json');
   
-  font = loadFont('../../fonts/Roboto-Regular.ttf');
+  font = loadFont('Roboto-Regular.ttf');
   
   loaded = true;
 }
@@ -29,7 +29,6 @@ function setupMachine() {
 
   // Create the video
   video = createCapture(VIDEO);
-
   video.size(vidW, vidH);
   video.hide();
 
@@ -41,25 +40,15 @@ function setupMachine() {
 
 function camDisplay() {
 
-  let offset = 50;
-
-  varW = width/2-vidW - offset;
-  varH = height/2-vidH - offset;
-
   // Draw the video
-  image(flippedVideo, varW, varH);
-  push();
-  stroke(0, 200, 0); 
-  noFill();
-  rect(varW, varH, vidW, vidH);
-  pop();
+  image(flippedVideo, width/2-vidW, height/2-vidH);
 
   // Draw the label
-  fill(255);
+  fill(0);
   textSize(18);
   textFont(font);
   textAlign(CENTER, CENTER);
-  text(label, varW + vidW/2, varH - offset);
+  text(label, width / 2 - vidW/2, height/2 - vidH - 20);
 }
 
 // Get a prediction for the current video frame
