@@ -230,8 +230,8 @@ main h2 {
 /* Contact */
 
 footer {
-    background: rgb(0,50,0);
-    background: linear-gradient(180deg, rgba(0,50,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,50,0,1) 100%); 
+    background: rgb(10,50,10);
+    background: linear-gradient(0deg, rgba(10,50,10,1) 0%, rgba(10,10,10,1) 100%);
     color: var(--accent-clr);
     padding: 0;
 }
