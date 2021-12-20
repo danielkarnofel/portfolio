@@ -43,7 +43,14 @@ function windowResized() {
 
 function setup() {
 
-  let canvas = createCanvas(600, 400, WEBGL);
+  if(windowHeight > windowWidth*(3/4)) {
+    r = windowWidth / 8;
+    let canvas = createCanvas(windowWidth-margin, (windowWidth-margin) * (3/4), WEBGL);
+  } else {
+    r = windowHeight / 8;
+    let canvas = createCanvas(windowHeight-margin, (windowHeight-margin) * (3/4), WEBGL);
+  }
+
   canvas.parent("sketch-div");
   
   setupMachine();
