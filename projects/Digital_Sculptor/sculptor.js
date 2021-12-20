@@ -33,8 +33,6 @@ function canvasSize(){
 
   vidW = windowW * (1/7);
   vidH = vidW*.75;
-
-  video.size(vidW, vidH);
 }
 
 function windowResized() {
