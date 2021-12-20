@@ -39,6 +39,9 @@ function setup() {
   windowW = windowWidth-200;
   windowH = windowW * (3/4);
   r = windowW/rDiv;
+
+  vidW = windowW * (1/7);
+  vidH = vidW*.75;
     
     let canvas = createCanvas(windowW, windowH, WEBGL);
     canvas.parent("sketch-div");

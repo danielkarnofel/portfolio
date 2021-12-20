@@ -6,8 +6,7 @@ let imageModelURL = 'https://teachablemachine.withgoogle.com/models/u75EP8qsd/';
 // Video
 let video;
 let flippedVideo;
-let vidW = 300;
-let vidH = vidW*.75;
+let vidW, vidH;
 
 let font;
 let loaded = false;
