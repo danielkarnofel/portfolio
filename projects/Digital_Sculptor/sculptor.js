@@ -29,7 +29,7 @@ function preload(){
 
 // - - - - - - - - - - - - - - - - - - - - 
 
-function windowResized() {
+function canvasSize() {
 
   if(windowHeight > windowWidth*(3/4)) {
     r = windowWidth / 8;
@@ -38,20 +38,20 @@ function windowResized() {
     r = windowHeight / 8;
     resizeCanvas(windowHeight-margin, (windowHeight-margin) * (3/4));
   }
+  
+}
+
+function windowResized() {
+
+  canvasSize();
 
 }
 
 function setup() {
 
-  if(windowHeight > windowWidth*(3/4)) {
-    r = windowWidth / 8;
-    let canvas = createCanvas(windowWidth-margin, (windowWidth-margin) * (3/4), WEBGL);
-  } else {
-    r = windowHeight / 8;
-    let canvas = createCanvas(windowHeight-margin, (windowHeight-margin) * (3/4), WEBGL);
-  }
-
+  let canvas = createCanvas(600, 400, WEBGL);
   canvas.parent("sketch-div");
+  canvasSize();
   
   setupMachine();
 
