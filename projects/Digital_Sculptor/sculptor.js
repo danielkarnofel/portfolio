@@ -16,17 +16,25 @@ let change = 0.01;
 let speed = levels / 500
 let d = -1, h = 0;
 
+let windowH, windowW;
+
 // - - - - - - - - - - - - - - - - - - - - 
 
 function windowResized() {
 
-  resizeCanvas(windowWidth, windowHeight);
+  windowW = windowWidth-100;
+  windowH = windowHeight-100;
+
+  resizeCanvas(windowW, windowH, WEBGL);
 
 }
 
 function setup() {
+
+  windowW = windowWidth-100;
+  windowH = windowHeight-100;
     
-    let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+    let canvas = createCanvas(windowW, windowH, WEBGL);
     canvas.parent("sketch-div");
   
   setupMachine();
