@@ -56,7 +56,7 @@ function camDisplay() {
   textSize(18);
   textFont(font);
   textAlign(CENTER, CENTER);
-  text(label, width/2 - vidW/2 - 10, height/2 - vidH - 20);
+  text(label, width/2 - vidW/2 - 10, height/2 - vidH - 30);
   pop();
 }
 
