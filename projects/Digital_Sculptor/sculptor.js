@@ -16,8 +16,6 @@ let change = 0.01;
 let speed = levels / 500
 let d = -1, h = 0;
 
-let w, h;
-
 // - - - - - - - - - - - - - - - - - - - - 
 
 function windowResized() {
