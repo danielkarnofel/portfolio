@@ -7,6 +7,7 @@ let imageModelURL = 'https://teachablemachine.withgoogle.com/models/u75EP8qsd/';
 let video;
 let flippedVideo;
 let vidW, vidH;
+let varW, varH;
 
 let font;
 let loaded = false;
@@ -28,6 +29,10 @@ function setupMachine() {
 
   // Create the video
   video = createCapture(VIDEO);
+
+  vidW = windowW * (1/7);
+  vidH = vidW*.75;
+
   video.size(vidW, vidH);
   video.hide();
 
@@ -41,8 +46,8 @@ function camDisplay() {
 
   let offset = 50;
 
-  let varW = width/2-vidW - offset;
-  let varH = height/2-vidH - offset;
+  varW = width/2-vidW - offset;
+  varH = height/2-vidH - offset;
 
   // Draw the video
   image(flippedVideo, varW, varH);
