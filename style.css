@@ -236,12 +236,7 @@ footer {
     padding: 0;
 }
 
-footer::after {
-    background: white;
-}
-
 footer a {
-    background-color:rgb(0, 0, 0, 0.5);
     display: block;
     text-align: center;
 }
