@@ -8,7 +8,10 @@ let levels = 50;
 let x, y;
 let xShift = 100;
 let z = [];
+
 let r = 100;
+let rDiv = 4;
+
 let a = [];
 let b = [];
 let change = 0.01;
@@ -17,18 +20,19 @@ let speed = levels / 500
 let d = -1, h = 0;
 
 let windowH, windowW;
+let margin = 200;
 
 // - - - - - - - - - - - - - - - - - - - - 
 
 function windowResized() {
 
-  windowW = windowWidth-100;
-  windowH = windowHeight-100;
+  windowW = windowWidth-margin;
+  windowH = windowHeight-margin;
 
   if(windowW < windowH) {
-    r = windowW/3;
+    r = windowW/rDiv;
   } else {
-    r = windowH/3;
+    r = windowH/rDiv;
   }
 
   resizeCanvas(windowW, windowH, WEBGL);
@@ -37,13 +41,13 @@ function windowResized() {
 
 function setup() {
 
-  windowW = windowWidth-100;
-  windowH = windowHeight-100;
+  windowW = windowWidth-margin;
+  windowH = windowHeight-margin;
 
   if(windowW < windowH) {
-    r = windowW/3;
+    r = windowW/rDiv;
   } else {
-    r = windowH/3;
+    r = windowH/rDiv;
   }
     
     let canvas = createCanvas(windowW, windowH, WEBGL);
