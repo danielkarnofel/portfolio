@@ -26,13 +26,9 @@ let margin = 200;
 
 function canvasSize(){
   
-  if(windowHeight > windowWidth) {
-    windowW = windowWidth-200;
-    windowH = windowW * (3/4);
-  } else {
-    windowH = windowHeight;
-    windowW = windowH * (4/3);
-  }
+  windowW = windowWidth-200;
+  windowH = windowW * (3/4);
+  
   r = windowW/rDiv;
 
   vidW = windowW * (1/7);
