@@ -33,11 +33,11 @@ function canvasSize(){
 
   vidW = windowW * (1/7);
   vidH = vidW*.75;
+
+  video.size(vidW, vidH);
 }
 
 function windowResized() {
-
-  setupMachine();
 
   canvasSize();
 
@@ -48,14 +48,9 @@ function windowResized() {
 function setup() {
 
   canvasSize();
-
-  vidW = windowW * (1/7);
-  vidH = vidW*.75;
     
   let canvas = createCanvas(windowW, windowH, WEBGL);
   canvas.parent("sketch-div");
-  
-  setupMachine();
 
   for (let i = 0; i <= levels; i++) {
 
