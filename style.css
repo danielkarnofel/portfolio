@@ -221,7 +221,7 @@ main h2 {
 
 .project-img:hover,
 .project-item:focus .portfolio-img {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     opacity: .5;
 }
 
