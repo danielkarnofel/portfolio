@@ -31,12 +31,12 @@ function preload(){
 
 function windowResized() {
 
-  if(windowHeight+200 > windowWidth) {
+  if(windowHeight > windowWidth*(3/4)) {
     r = windowWidth / 8;
-    resizeCanvas(windowWidth-margin, windowWidth * (3/4));
+    resizeCanvas(windowWidth-margin, (windowWidth-margin) * (3/4));
   } else {
     r = windowHeight / 8;
-    resizeCanvas(windowHeight-margin, windowHeight * (3/4));
+    resizeCanvas(windowHeight-margin, (windowHeight-margin) * (3/4));
   }
 
 }
