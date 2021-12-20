@@ -201,7 +201,7 @@ main h2 {
 }
 
 .project-item {
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
     overflow: hidden;
 }
 
@@ -230,8 +230,8 @@ main h2 {
 /* Contact */
 
 footer {
-    background: rgb(10,50,10);
-    background: linear-gradient(0deg, rgba(10,50,10,1) 0%, rgba(10,10,10,1) 100%);
+    background: rgb(10,100,10);
+    background: linear-gradient(0deg, rgba(10,100,10,1) 0%, rgba(10,10,10,1) 100%);
     color: var(--accent-clr);
     padding: 0;
 }
