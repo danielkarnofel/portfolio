@@ -39,12 +39,15 @@ function setupMachine() {
 
 function camDisplay() {
 
+  let varW = width/2-vidW;
+  let varH = height/2-vidH;
+
   // Draw the video
-  image(flippedVideo, width/2-vidW, height/2-vidH);
+  image(flippedVideo, varW, varH);
   push();
   stroke(0, 200, 0); 
   noFill();
-  rect(width/2-vidW, height/2-vidH, vidW, vidH);
+  rect(varW, varH, vidW, vidH);
   pop();
 
   // Draw the label
@@ -52,7 +55,7 @@ function camDisplay() {
   textSize(18);
   textFont(font);
   textAlign(CENTER, CENTER);
-  text(label, width/2-vidW/2, height/2-vidH);
+  text(label, varW + vidW/2, varH + vidH - 10);
 }
 
 // Get a prediction for the current video frame
