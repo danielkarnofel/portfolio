@@ -40,10 +40,11 @@ function setupMachine() {
 function camDisplay() {
 
   // Draw the video
-  image(flippedVideo, width/2-vidW, height/2-vidH);
+  image(flippedVideo, width/2-vidW - 20, height/2-vidH - 20);
   push();
   stroke(0, 200, 0); 
-  rect(width/2-vidW, height/2-vidH, vidW, vidH);
+  noFill();
+  rect(width/2-vidW - 20, height/2-vidH - 20, vidW, vidH);
   pop();
 
   // Draw the label
