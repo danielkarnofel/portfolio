@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <script src="inter_aesthetic.js"></script>
+    <script src="interface.js"></script>
+    <script src="input.js"></script>
+    <script src="output.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="inter_aesthetic.css" />
+
+    <title>Inter - Aesthetic</title>
+
+</head>
+
+<body>
+
+    <center>
+
+        <div id="sketch-div"></div>
+
+    </center>
+
+    <h1> Inter - Aesthetic </h1>
+
+    <br>
+
+    <p> This project connects two intuitive aesthetic spaces: audio and visual. By selecting a set of 5 inputs, the user generates a unique pair of audio and visual outputs. The exploration of each space provides an interface for navigating the other. </p>
+
+    <h2> Audio Input </h2>
+
+    <p> The audio is generated through frequency modulation. The two coordinates of each user selection map to a unique carrier and modulator pair that can generate a wide variety of interesting outputs. A set of 5 inputs is required to provide 1 point of training data. </p>
+
+    <h2> Visual Output </h2>
+
+    <p> The visual output is generated through the composition of 5 shape classes, according to the predictive weights given by the neural network. By training the model on different sets and patterns of inputs in association with each shape class, the user can affect the character of the generated shapes. </p>
+
+    <h2> The Intelligence </h2>
+
+    <p> A neural network provides the means of interface between these two virtual spaces. Either a pre-trained model intended to maximise the variety of visual outputs, or the user's personally generated model that can uniquely reflect their circumstantial and intentional use. </p>
+
+    <br>
+
+    <br>
+
+    <h2> Data Flow </h2>
+
+    <p> The feedback between the user's visual and audible experience affects their choices, both in generating the training data and navigating the generated space. </p>
+
+    <br>
+
+    <center>
+
+        <img src='images/data_map.png'>
+
+    </center>
+
+    <br>
+
+    <br>
+
+    <h2> Inspiration </h2>
+
+    <p> Marvin Minsky's 'The Society of Mind' </p>
+
+    <p> The ability of minds to perform complex tasks is a result of independent agents working together, not any single complex mechanism. Creativity and interesting outputs are best produced through iteration and the isolation of information to certain parts of the larger system (e.g. adversarial networks). </p>
+
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+
+
+.divider-line {
+    border-top: 1px solid var(--light-color);
+    margin-bottom: 50px;
+}
+
+/*--------------------------------------------------*/
+/*Main Project Container*/
+/*--------------------------------------------------*/
+
+/* .project-page-container {
+    display: flex;
+    flex-flow: row wrap;
+} */
+
+/*Title*/
+
+.title-container {
+    width: 100%;
+}
+
+.tree-project-title {
+    font-family: var(--sans-font);
+    font-weight: var(--fw-bold);
+    margin-bottom: 10px;
+}
+
+/*Subtitle*/
+
+.tree-project-subtitle {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+
+    font-family: var(--serif-font);
+    font-weight: var(--fw-bold);
+
+    width: 560px;
+
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/*Main Project Image*/
+
+.project-img-container {
+    width: 100%;
+}
+
+.tree-project-img {
+    width: 100%;
+    max-width: 90vmin;
+    min-width: 560px;
+    height: auto;
+    display: block;
+    margin: auto;
+    
+}
+
+.quote-palette-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    padding: 50px 0;
+    margin-bottom: 50px;;
+    height: 500px;
+}
+
+/*Quote Container*/
+
+.quote-container {
+    grid-column: 1 / span 1;
+    margin: 30px 0 20px 0;
+    min-width: 560px;
+    display: inline-block;
+}
+
+.quote-text {
+    border-left: 3px solid var(--accent-color);
+    padding: 0 0 10px 10px;
+}
+
+/*Source*/
+
+.quote-source {
+    padding: 30px 0 50px 0;
+}
+
+.quote-source a {
+    text-decoration: underline;
+}
+
+/*Palette*/
+
+.palette-img {
+    grid-column: 2 / span 1;
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+}
+
+/*--------------------------------------------------*/
+/*Process Container*/
+/*--------------------------------------------------*/
+
+.process-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.sketch-img {
+    grid-column: 2 / span 1;
+    width: 100%;
+    height: auto;
+}
+
+.tree-prototype-img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    width: 100%;
+}
+
+.concept-description {
+    grid-column: 2 / span 1;
+}
