@@ -1,0 +1,42 @@
+
+.project-main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+
+.project-page-title {
+    grid-column: 1 / span 3;
+    padding: 0 0 30px 0;
+}
+
+.main-img {
+    grid-column: 1 / span 3;
+}
+
+.main-img video {
+    width: 100%;
+    height: auto;
+}
+
+.project-page-description {
+    grid-column: 1 / span 3;
+    padding: 30px 0;
+}
+
+@media (min-width: 1000px) {
+    
+    .main-img {
+        grid-column: 1 / span 2;
+    }
+
+    .project-page-description {
+        grid-column: 3 / span 1;
+        max-width: 75ch;
+    }
+
+}
+
+.back-to-top {
+    display: none;
+}
