@@ -166,8 +166,9 @@ nav {
 
     .nav-item {
         width: initial;
-        padding: 0 0 0 25px;
+        padding: 0 15px 0 15px;
         background: none;
+        border-left: 1px solid var(--light-color);
     }
 
     .nav-item a {
@@ -270,7 +271,7 @@ main {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 
     .project-item {
         display: flex;
@@ -287,7 +288,7 @@ main {
 
     .project-img {
         flex-basis: 60%;
-        max-width: 90vmin;
+        max-width: 80vmin;
     }
 
     .project-description {
