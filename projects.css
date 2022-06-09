@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
+    align-items: center;
 }
 
 .project-page-title {
@@ -22,17 +23,26 @@
 .project-page-description {
     grid-column: 1 / span 3;
     padding: 30px 0;
+    min-width: 50ch;
+    max-width: 75ch;
+}
+
+.project-page-description p {
+    padding: 10px 0;
 }
 
 @media (min-width: 1000px) {
+
+    .project-main-container {
+        grid-template-columns: minmax(50%, 90vmin) minmax(50ch, 75ch);
+    }
     
     .main-img {
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 1;
     }
 
     .project-page-description {
-        grid-column: 3 / span 1;
-        max-width: 75ch;
+        grid-column: 2 / span 1;
     }
 
 }

@@ -102,17 +102,17 @@ body {
 /*--------------------------------------------------*/
 
 header {
-    grid-column: 2 / span 10;
-    /* height: 100px; */
+    grid-column: 1 / span 12;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 50px);
     row-gap: 10px;
+    justify-content: center;
 }
 
 /*Name / Title*/
 .name {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     white-space: nowrap;
 }
@@ -147,7 +147,12 @@ nav {
 @media (min-width: 800px) {
 
     header {
+        grid-column: 2 / span 10;
         grid-template-rows: repeat(3, 50px);
+    }
+
+    .name {
+        grid-column: 1 / span 1;
     }
 
     nav {
@@ -229,8 +234,7 @@ nav {
 /*--------------------------------------------------*/
 
 main {
-    grid-column: 2 / span 10;
-    /* transform: translate(0, -100px); */
+    grid-column: 1 / span 12;
 }
 
 .projects-section-title {
@@ -248,7 +252,7 @@ main {
 }
 
 .project-description {
-    margin: 0 0;
+    margin: 0 3rem;
 }
 
 .project-title {
@@ -257,6 +261,40 @@ main {
 
 .project-text {
     margin: 0 0 15px 0;
+}
+
+@media (min-width: 800px) {
+    main {
+        grid-column: 2 / span 10;
+        transform: translate(0, -200px);
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .project-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .left {
+        flex-direction: row;
+    }
+
+    .right {
+        flex-direction: row-reverse;
+    }
+
+    .project-img {
+        flex-basis: 60%;
+        max-width: 90vmin;
+    }
+
+    .project-description {
+        flex-basis: 40%;
+        min-width: 50ch;
+        max-width: 75ch;
+    }
 }
 
 
