@@ -31,6 +31,8 @@ let osc, freq, amp, mod;
 // game variables
 let score, playing;
 
+let divWidth, divHeight;
+
 // - - - - - - - - - - - - - - - - - - - - 
 
 function preload(){
@@ -40,19 +42,20 @@ function preload(){
   virus = loadImage('images/virus.png');
   
   // load fonts
-  marker = loadFont('../../fonts/PermanentMarker-Regular.ttf');
-  roboto = loadFont('../../fonts/Roboto-Regular.ttf');
+  marker = loadFont('fonts/PermanentMarker-Regular.ttf');
+  roboto = loadFont('fonts/Roboto-Regular.ttf');
 
 }
 
 // - - - - - - - - - - - - - - - - - - - - 
 
 function setup() {
-  // let wWidth = windowHeight * .75;
-  // var canvas = createCanvas(wWidth, windowHeight);
 
-  var canvas = createCanvas(450, 600);
-  canvas.parent('sketch-div');
+  divWidth = document.getElementById("sketch-div-destroyer").clientWidth;
+  divHeight = document.getElementById("sketch-div-destroyer").clientHeight;
+
+  var canvas = createCanvas(divWidth, divHeight);
+  canvas.parent('sketch-div-destroyer');
   
   cursor(CROSS);
   
@@ -70,10 +73,19 @@ function setup() {
   playing = false;
 }
 
+window.addEventListener('resize', function(event){
+
+  divWidth = document.getElementById("sketch-div-destroyer").clientWidth;
+  divHeight = document.getElementById("sketch-div-destroyer").clientHeight;
+  
+  resizeCanvas(divWidth, divHeight);
+
+});
+
 // - - - - - - - - - - - - - - - - - - - - 
 
 function draw() {
-  background(80, 100, 50);
+  background(60, 120, 60);
   
   // draw virus mobs
   for(let i = 0; i < mobs.length; i++){
@@ -105,18 +117,6 @@ function draw() {
 }
 
 // - - - - - - - - - - - - - - - - - - - - 
-
-// interactivity
-
-// function keyPressed(){
-  
-//   if(playing == false){
-    
-//     playing = true;
-    
-//   }
-  
-// }
 
 function mousePressed(){
 
@@ -297,12 +297,12 @@ function createCastle(){
   push();
   if(wallLife > 0){
     
-    fill(100);
+    fill(100, 110, 130);
     noStroke();
     rect(0, height-wallSize, width, wallSize); 
     
     stroke(0);
-    strokeWeight(3);
+    strokeWeight(10);
     line(0, height-wallSize, width, height-wallSize);
     
   }
@@ -325,14 +325,14 @@ function createCastle(){
 function createLaser(){
   
   laserX = width/2;
-  laserY = height-wallSize;
+  laserY = height-wallSize-20;
   
   push();
   
   // translate to bottom-middle and follow mouse
   translate(laserX, laserY);
   let a = atan2(mouseY-laserY, mouseX-laserX);
-  rotate(a+PI*0.491);
+  rotate(a+PI*0.491+0.03);
   
   if(wallLife > 0){
     
@@ -351,7 +351,7 @@ function createLaser(){
     
     // draw laser cannon
     imageMode(CENTER);
-    image(laser, 0, 0, 90, 100);
+    image(laser, 0, -10, 120, 142);
     
   }
   

@@ -21,8 +21,8 @@ let infoText = "Many Worlds explores the idea of higher dimensional space and ge
 
 function preload(){
 
-  font1 = loadFont('../../fonts/Raleway-ExtraBold.ttf');
-  font2 = loadFont('../../fonts/Roboto-Regular.ttf');
+  font1 = loadFont('fonts/Raleway-ExtraBold.ttf');
+  font2 = loadFont('fonts/Roboto-Regular.ttf');
 
 }
 

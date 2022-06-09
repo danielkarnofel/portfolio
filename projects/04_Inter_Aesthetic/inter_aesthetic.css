@@ -6,10 +6,9 @@ body{
   border: 0px;
 }
 
-sketch-div{
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
+#sketch-div{
+  width: 100vw;
+  height: 100vh;
 }
 
 h1{

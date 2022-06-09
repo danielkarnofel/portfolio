@@ -19,18 +19,23 @@ let confidence = [];
 
 let font;
 
+let divWidth, divHeight;
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - 
 // - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function preload() {
-  font = loadFont('../../fonts/DotGothic16-Regular.ttf');
+  font = loadFont('fonts/DotGothic16-Regular.ttf');
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function setup() {
 
-  let canvas = createCanvas(windowWidth, windowHeight);
+  divWidth = document.getElementById("sketch-div").clientWidth;
+  divHeight = document.getElementById("sketch-div").clientHeight;
+
+  let canvas = createCanvas(divWidth, divHeight);
   canvas.parent("sketch-div");
 
   textAlign(LEFT, CENTER);
@@ -61,6 +66,19 @@ function setup() {
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+window.addEventListener('resize', function(event){
+
+  divWidth = document.getElementById("sketch-div").clientWidth;
+  divHeight = document.getElementById("sketch-div").clientHeight;
+  
+  resizeCanvas(divWidth, divHeight);
+
+  loadModel.position(width / 2 - buttonSize/2 + 50, height/2+40);
+  trainModel.position(width / 2 - buttonSize/2 - 50, height/2+40);
+
+});
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - 
 // - - - - - - - - - - - - - - - - - - - - - - - - - 
 
