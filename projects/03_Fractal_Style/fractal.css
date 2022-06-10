@@ -1,4 +1,16 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
 .project-main-container {
     grid-row: 2 / span 1;
     display: grid;
