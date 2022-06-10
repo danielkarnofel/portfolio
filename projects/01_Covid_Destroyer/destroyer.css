@@ -1,5 +1,11 @@
 /* destroyer - style sheet */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
 	--roboto: 'Roboto', sans-serif;
 
@@ -11,7 +17,6 @@
 }
 
 body {
-	margin: 0;
 	background-color: var(--dark-color);
 	color: var(--light-color);
 } 
@@ -25,26 +30,21 @@ body {
 	text-align: center;
 	font-size: 2rem;
 	font-family: var(--roboto);
-	font-weight: var(--fw-bold);
 	color: var(--light-color);
-	background-color: rgb(60, 120, 60);
-	border: 5px solid red;
-	width: 30%;
 	margin: 3rem auto 0;
 }
 
 .destroyer-subtitle {
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-family: var(--roboto);
-	margin: 1rem 0 2rem;
+	margin: 1rem;
 }
 
 #sketch-div-destroyer {
 	width: 100vmin;
 	height: 133vmin;
 	margin: 2rem 0 2rem 0;
-	border: 5px solid red;
 }
 
 @media (min-width: 800px) {
@@ -56,18 +56,18 @@ body {
 }
 
 .destroyer-description {
-	width: 60vmin;
-	min-width: 50ch;
+	width: 90%;
 	max-width: 75ch;
-	margin: 1rem auto 5rem auto;
+	margin: 1rem auto;
+	padding: 20px 1rem;
 	font-family: var(--roboto);
+	border: 1px solid var(--light-color);
 }
 
 .destroyer-description p{
 	display: block;
 	text-align: left;
-	font-size: 1rem;
+	font-size: 0.75rem;
 	line-height: 1.4;
-	padding: 20px 0 0 0;
 }
 
