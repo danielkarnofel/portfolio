@@ -113,11 +113,11 @@ nav {
     header {
         grid-column: 2 / span 10;
         grid-template-rows: repeat(3, 50px);
-        justify-content: start;
     }
 
     .name {
         grid-column: 1 / span 1;
+        text-align: left;
     }
 
     nav {
