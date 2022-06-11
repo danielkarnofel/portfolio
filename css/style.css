@@ -206,11 +206,11 @@ main {
 .projects-section-title {
     text-align: center;
     padding: 0 0 10px 0;
-    margin: 50px 0 0 0;
+    margin: 75px 0 0 0;
 }
 
 .project-item {
-    margin: 50px 0 150px;
+    margin: 100px 0 100px;
 }
 
 .project-img {
@@ -272,7 +272,6 @@ footer {
     grid-column: 1 / span 12;
     height: 200px;
     margin-top: 50px;
-    border-top: 1px solid var(--light-color);
 }
 
 .contact-list {
