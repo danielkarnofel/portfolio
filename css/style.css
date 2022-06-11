@@ -215,6 +215,11 @@ main {
 
 .project-img {
     width: 100%;
+    transition: 25ms linear;
+}
+
+.project-img:hover {
+    opacity: 50%;
 }
 
 .project-description {
