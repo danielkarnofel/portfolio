@@ -15,6 +15,12 @@ h2 {
     font-size: var(--fs-h2);
 }
 
+h3 {
+    font-family: var(--sans-font);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+}
+
 a {
     font-family: var(--serif-font);
     font-weight: var(--fw-reg);
@@ -228,6 +234,10 @@ main {
 
 .project-title {
     margin: 30px 0 15px 0;
+}
+
+.project-subtitle {
+    margin: 15px 0;
 }
 
 .project-text {
