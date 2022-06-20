@@ -13,7 +13,7 @@ body {
 .iframe-container {
     overflow: hidden;
     width: 100vw;
-    height: calc(100vw * 1080/1920);
+    height: 75vw;
     margin: auto;
     padding: 0 1rem;
 }
@@ -34,16 +34,11 @@ body {
     font-family: var(--sans-font);
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
 
     .project-main-container {
-        display: grid;
-        grid-template-areas: 
-        'title title'
-        'video text';
-        gap: 25px;
-        margin: 0 50px;
-        align-items: center;
+        max-width: 80vmin;
+        margin: 1rem auto;
     }
 
     .project-page-title {
@@ -51,15 +46,14 @@ body {
     }
     
     .iframe-container {
-        grid-area: video;
-        width: 60vmin;
-        height: 60vmin;
+        width: 80vmin;
+        height: 50vmin;
     }
 
     .project-page-description {
-        grid-area: text;
+        padding: 1rem;
         max-width: 75ch;
-        margin: 0;
+        margin: auto;
     }
 
 }
