@@ -1,0 +1,73 @@
+/* destroyer - style sheet */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+	--roboto: 'Roboto', sans-serif;
+
+	/*Colors*/
+    --light-color: rgb(220, 220, 220);
+    --mid-color: rgb(80, 80, 80);
+    --dark-color: rgb(10, 10, 10);
+    --accent-color: rgb(0, 200, 0);
+}
+
+body {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+} 
+
+.destroyer-container {
+	grid-column: 1 / span 12;
+	grid-row: 2 / span 1;
+}
+
+.destroyer-title {
+	text-align: center;
+	font-size: 2rem;
+	font-family: var(--roboto);
+	color: var(--light-color);
+	margin: 3rem auto 0;
+}
+
+.destroyer-subtitle {
+	text-align: center;
+	font-size: 1.25rem;
+	font-family: var(--roboto);
+	margin: 1rem;
+}
+
+#sketch-div-destroyer {
+	width: 100vmin;
+	height: 133vmin;
+	margin: 2rem 0 2rem 0;
+}
+
+@media (min-width: 800px) {
+	#sketch-div-destroyer {
+		height: 80vmin;
+		width: 60vmin;
+		margin: auto;
+	}
+}
+
+.destroyer-description {
+	width: 90%;
+	max-width: 75ch;
+	margin: 1rem auto;
+	padding: 20px 1rem;
+	font-family: var(--roboto);
+	border: 1px solid var(--light-color);
+}
+
+.destroyer-description p{
+	display: block;
+	text-align: left;
+	font-size: 0.75rem;
+	line-height: 1.4;
+}
+
